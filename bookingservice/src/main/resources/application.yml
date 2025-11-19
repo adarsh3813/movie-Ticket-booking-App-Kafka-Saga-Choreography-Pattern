@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: booking-service
+  datasource:
+    url: jdbc:h2:mem:movieBookingDb
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+#  kafka:
+#    producer:
+#      bootstrap-servers: localhost:9092
+
+
+server:
+    port: 8081
+
